@@ -5,7 +5,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{build/awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=2.4cm, top=1.2cm, right=2.4cm, bottom=1.8cm, footskip=.5cm}
@@ -16,7 +16,7 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-skyblue}
+\colorlet{awesome}{awesome-darknight}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -40,8 +40,8 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 %%\photo[circle,noedge,left]{./examples/profile}
-\name{Şemsi Yiğit}{Özgümüş}
-\position{Computer Engineer{\enskip\cdotp\enskip}M.Sc.}
+\name{Yiğit}{Özgümüş}
+\position{Software Engineer{\enskip\cdotp\enskip}M.Sc.}
 %\address{}
 \mobile{(+90) 555-452-11-57}
 \email{yigitozgumus1@gmail.com}
@@ -66,10 +66,10 @@
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
-% The company being applied to
-\recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% % The company being applied to
+% \recipient
+%   {Company Recruitment Team}
+%   {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
@@ -79,7 +79,7 @@
 \letterclosing{Sincerely,}
 % How the letter is closed
 % Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}
+% \letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
@@ -93,22 +93,12 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Şemsi Yiğit Özgümüş ~~~·~~~Cover Letter}
+  {Yiğit Özgümüş ~~~·~~~Cover Letter}
   {}
 
 % Print the title with above letter informations
 \makelettertitle
-
-%-------------------------------------------------------------------------------
-%	LETTER CONTENT
-%-------------------------------------------------------------------------------
-\begin{cvletter}
-
-
-
-\end{cvletter}
-
-
+\input{coverLetter/letter-content.tex}
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter informations
 \makeletterclosing
