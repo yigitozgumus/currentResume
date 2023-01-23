@@ -14,10 +14,6 @@ resume: $(EXAMPLES_DIR)/resume_yigit_ozgumus.tex
 	$(CC) -output-directory=$(OUTPUT_DIR) $<
 	$(MAKE) clean_output_dir
 
-resume_turkish: $(EXAMPLES_DIR)/resume_yigit_ozgumus_turkish.tex
-	$(CC) -output-directory=$(OUTPUT_DIR) $<
-	$(MAKE) clean_output_dir
-
 coverletter: $(EXAMPLES_DIR)/coverletter_yigit_ozgumus.tex
 	$(CC) -output-directory=$(OUTPUT_DIR) $<
 	$(MAKE) clean_output_dir
